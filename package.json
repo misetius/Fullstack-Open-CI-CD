@@ -2,7 +2,7 @@
   "name": "puhelinluettelo",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,8 +14,12 @@
     "axios": "^1.12.2",
     "babel-eslint": "^10.1.0",
     "cross-env": "^10.1.0",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.0.2",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "supertest": "^7.1.4",
+    "vitest": "^4.0.16"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.5.0",

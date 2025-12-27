@@ -1,6 +1,10 @@
 const mongoose = require('mongoose')
 
-const url = process.env.MONGODB_URI
+const url = process.env.NODE_ENV === 'test' 
+  ? process.env.MONGODB_TEST_URI
+  : process.env.MONGODB_URI
+
+console.log(url)
 
 mongoose.set('strictQuery', false)
 
@@ -37,5 +41,5 @@ phonenumberSchema.set('toJSON', {
 })
 
 
-module.exports = mongoose.model('PhoneNumber', phonenumberSchema)
+module.exports = mongoose.models.PhoneNumber || mongoose.model('PhoneNumber', phonenumberSchema)
 
