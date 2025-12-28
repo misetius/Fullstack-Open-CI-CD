@@ -14,7 +14,7 @@ on:
 jobs: 
     deployment_pipeline:
         env: 
-            MONGODB_TEST_URI: ${{ secrets.MONGODB_TEST_URI }}
+          MONGODB_TEST_URI: ${{ secrets.MONGODB_TEST_URI }}
         runs-on: ubuntu-latest
         concurrency: deploy-group
         steps:
