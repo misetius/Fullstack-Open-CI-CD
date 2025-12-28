@@ -47,7 +47,7 @@ test('Delete phonenumber', async () => {
   const responseNumbers2 = await api
     .get('/api/persons')
     .expect(200)   
-
+  
   assert.strictEqual(responseNumbers2.body.length, 1)
     
 })
