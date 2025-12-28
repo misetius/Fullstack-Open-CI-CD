@@ -1,7 +1,7 @@
 const assert = require('node:assert')
 const { test, after, beforeEach } = require('node:test')
 const mongoose = require('mongoose')
-const PhoneNumber = require('../models/PhoneNumber')
+const PhoneNumber = require('../models/phonenumber')
 const supertest = require('supertest')
 const app = require('../app')
 const api = supertest(app)
