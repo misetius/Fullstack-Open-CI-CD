@@ -27,6 +27,6 @@ jobs:
           - name: Check style
             run: npm run lint
           - name: backend test
-            run: cd backend && npm run test
+            run: cd backend && npm install && ls && npm run test
 
 

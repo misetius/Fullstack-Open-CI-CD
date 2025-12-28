@@ -4,7 +4,7 @@ const app = express()
 const PhoneNumber = require('./models/phonenumber')
 
 
-
+//muutoksia
 
 
 
@@ -31,7 +31,7 @@ app.use(morgan('tiny'))
 
 
 app.get('/api/persons', (request, response) => {
-
+  console.log("miks tää on tämmöstä")
   PhoneNumber.find({}).then((numbers) => {
     response.json(numbers)
   })
