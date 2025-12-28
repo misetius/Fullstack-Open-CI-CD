@@ -1,3 +1,4 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
 
 const url = process.env.NODE_ENV === 'test' 
