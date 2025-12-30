@@ -26,7 +26,10 @@ jobs:
             run: npm install  
           - name: Check style
             run: npm run lint
-          - name: backend test
+          - name: run E2E-tests
+            run: npm preview && npm test
+          - name: Run API-tests
             run: cd backend && npm install && ls && npm run test
+          
 
 
